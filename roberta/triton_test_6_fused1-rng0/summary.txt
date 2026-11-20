@@ -1,0 +1,2 @@
+task=SST-2 seed=42 dev_acc=0.8125 test_acc=0.8176605504587156 test_loss=0.40190139412879944
+task=SST-2  test_acc mean=0.8177  std=0.0000 (sample)  stderr=0.0000  over 1 seeds

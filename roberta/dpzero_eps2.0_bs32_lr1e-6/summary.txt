@@ -1,0 +1,18 @@
+task=SST-2 seed=13 dev_acc=0.4375 test_acc=0.5034403669724771 test_loss=0.926661491394043
+task=SST-2 seed=21 dev_acc=0.5 test_acc=0.4908256880733945 test_loss=7.359055995941162
+task=SST-2 seed=42 dev_acc=0.5 test_acc=0.5091743119266054 test_loss=5.110656261444092
+task=SST-2 seed=87 dev_acc=0.5 test_acc=0.4908256880733945 test_loss=4.083744049072266
+task=SST-2 seed=100 dev_acc=0.5 test_acc=0.5091743119266054 test_loss=3.885120391845703
+task=sst-5 seed=13 dev_acc=0.2 test_acc=0.133 test_loss=5.93060827255249
+task=sst-5 seed=21 dev_acc=0.175 test_acc=0.164 test_loss=4.340957164764404
+task=sst-5 seed=42 dev_acc=0.2 test_acc=0.18 test_loss=6.237720012664795
+task=sst-5 seed=87 dev_acc=0.225 test_acc=0.203 test_loss=3.6825034618377686
+task=sst-5 seed=100 dev_acc=0.2 test_acc=0.225 test_loss=3.1959331035614014
+task=SNLI seed=13 dev_acc=0.3333333333333333 test_acc=0.312 test_loss=10.524925231933594
+task=SNLI seed=21 dev_acc=0.3333333333333333 test_acc=0.341 test_loss=5.47700309753418
+task=SNLI seed=42 dev_acc=0.3333333333333333 test_acc=0.341 test_loss=3.7775590419769287
+task=SNLI seed=87 dev_acc=0.3333333333333333 test_acc=0.312 test_loss=6.61453104019165
+task=SNLI seed=100 dev_acc=0.2916666666666667 test_acc=0.347 test_loss=2.9911792278289795
+task=SST-2  test_acc mean=0.5007  std=0.0093 (sample)  stderr=0.0042  over 5 seeds
+task=sst-5  test_acc mean=0.1810  std=0.0354 (sample)  stderr=0.0158  over 5 seeds
+task=SNLI  test_acc mean=0.3306  std=0.0172 (sample)  stderr=0.0077  over 5 seeds

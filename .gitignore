@@ -1,0 +1,8 @@
+result/
+logs_*/
+data/original/
+data/k-shot*/
+__pycache__/
+*.pt
+*.bin
+*.zip

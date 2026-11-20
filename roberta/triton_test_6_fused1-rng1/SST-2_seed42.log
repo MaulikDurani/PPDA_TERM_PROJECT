@@ -1,0 +1,260 @@
+11/14/2026 18:15:04:WARNING:Process rank: -1, device: cuda:0, n_gpu: 1, distributed training: False, 16-bits training: False
+11/14/2026 18:15:04:INFO:Training/evaluation parameters DynamicTrainingArguments(
+_n_gpu=1,
+adafactor=False,
+adam_beta1=0.9,
+adam_beta2=0.999,
+adam_epsilon=1e-08,
+adjust_for_init=False,
+array_id=-1,
+auto_find_batch_size=False,
+bf16=False,
+bf16_full_eval=False,
+binary_classification=False,
+data_seed=None,
+dataloader_drop_last=False,
+dataloader_num_workers=0,
+dataloader_pin_memory=True,
+ddp_bucket_cap_mb=None,
+ddp_find_unused_parameters=None,
+ddp_timeout=1800,
+debug=[],
+deepspeed=None,
+disable_tqdm=False,
+do_eval=True,
+do_predict=True,
+do_train=True,
+dp_delta=1e-05,
+dp_epsilon=6.0,
+dpzero=True,
+dpzero_clip_threshold=200.0,
+efficient_zero_order=True,
+efficient_zero_order_fp16=False,
+eval_accumulation_steps=None,
+eval_delay=0,
+eval_steps=50,
+evaluate_during_training=False,
+evaluation_strategy=no,
+exclude_embeddings=False,
+exclude_first_layers=-1,
+exclude_head=False,
+f0_scaling=1.0,
+fix_layers=0,
+fp16=False,
+fp16_backend=auto,
+fp16_full_eval=False,
+fp16_opt_level=O1,
+from_linearhead=False,
+fsdp=[],
+fsdp_config={'fsdp_min_num_params': 0, 'xla': False, 'xla_fsdp_grad_ckpt': False},
+fsdp_min_num_params=0,
+fsdp_transformer_layer_cls_to_wrap=None,
+full_determinism=False,
+fzoo_n=4,
+fzoo_parallel=True,
+gradient_accumulation_steps=1,
+gradient_checkpointing=False,
+greater_is_better=None,
+group_by_length=False,
+half_precision_backend=auto,
+head_tuning=False,
+hf_inference_model=False,
+hub_model_id=None,
+hub_private_repo=False,
+hub_strategy=every_save,
+hub_token=<HUB_TOKEN>,
+ignore_data_skip=False,
+include_inputs_for_metrics=False,
+jit_mode_eval=False,
+kernel_formula=sgd,
+kernel_gamma=1.0,
+kernel_regularization=0.0,
+kernel_solver=logistic,
+label_names=None,
+label_smoothing_factor=0.0,
+layer_wise_optim=False,
+learning_rate=0.0001,
+length_column_name=length,
+load_best_model_at_end=False,
+load_kernels=None,
+local_rank=-1,
+log_file=log,
+log_level=passive,
+log_level_replica=warning,
+log_on_each_node=True,
+logging_dir=result/SST-2-roberta-large-prompt-standard-k16-roberta-large-fzoo-dp-ft-seed42-bs8-lr1e-4-eps1e-4-wd0-step50-evalstep50-n4-par-fused1-rng1/16-42/runs/Nov14_18-15-04_DESKTOP-QL238MA,
+logging_first_step=False,
+logging_nan_inf_filter=True,
+logging_steps=10,
+logging_strategy=steps,
+lp_early_stopping=False,
+lr_scheduler_type=constant,
+max_grad_norm=1.0,
+max_steps=50,
+max_zo_forward_steps=0,
+metric_for_best_model=None,
+model_id=-1,
+mp_parameters=,
+no_cuda=False,
+no_predict=False,
+no_train=False,
+num_train_epochs=3.0,
+only_biases=False,
+optim=adamw_hf,
+optim_args=None,
+optimize_acc=False,
+optimizer=sgd,
+optimizer_variant=,
+output_dir=result/SST-2-roberta-large-prompt-standard-k16-roberta-large-fzoo-dp-ft-seed42-bs8-lr1e-4-eps1e-4-wd0-step50-evalstep50-n4-par-fused1-rng1/16-42,
+overwrite_kernels=False,
+overwrite_output_dir=True,
+past_index=-1,
+per_device_eval_batch_size=4,
+per_device_train_batch_size=8,
+prediction_loss_only=False,
+prob_as_feature=False,
+push_to_hub=False,
+push_to_hub_model_id=None,
+push_to_hub_organization=None,
+push_to_hub_token=<PUSH_TO_HUB_TOKEN>,
+random_model_init=False,
+ray_scope=last,
+remove_unused_columns=True,
+report_to=[],
+resume_from_checkpoint=None,
+run_name=result/SST-2-roberta-large-prompt-standard-k16-roberta-large-fzoo-dp-ft-seed42-bs8-lr1e-4-eps1e-4-wd0-step50-evalstep50-n4-par-fused1-rng1/16-42,
+save_at_last=False,
+save_logit=False,
+save_logit_dir=None,
+save_on_each_node=False,
+save_safetensors=False,
+save_steps=500,
+save_strategy=steps,
+save_total_limit=None,
+scale_lr_with_samples=False,
+seed=42,
+sharded_ddp=[],
+skip_memory_metrics=True,
+sweep=False,
+sync_embedding_layers=False,
+tf32=None,
+tie_emb=False,
+torch_compile=False,
+torch_compile_backend=None,
+torch_compile_mode=None,
+torchdynamo=None,
+tpu_metrics_debug=False,
+tpu_num_cores=None,
+trainer=standard,
+use_ipex=False,
+use_legacy_prediction_loop=False,
+use_mps_device=False,
+warmup_ratio=0.0,
+warmup_steps=0,
+weight_decay=0.0,
+xpu_backend=None,
+zero_order_clip_grad=False,
+zero_order_eps=0.0001,
+zero_order_optim=True,
+zero_order_sample=1,
+zero_order_sample_scheduler=None,
+zero_order_use_trainer_optim=False,
+zo_variant=None,
+)
+11/14/2026 18:15:04:INFO:Task name: sst-2, number of labels: 2, output mode: classification
+11/14/2026 18:15:05:WARNING:By default for RoBERTa models the input embeddings and the output embeddings are NOT tied!!!!
+Some weights of RobertaModelForPromptFinetuning were not initialized from the model checkpoint at roberta-large and are newly initialized: ['classifier.bias', 'roberta.embeddings.position_ids', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+11/14/2026 18:15:07:INFO:Label 0 to word Ġterrible (6587)
+11/14/2026 18:15:07:INFO:Label 1 to word Ġgreat (372)
+11/14/2026 18:15:07:INFO:Total num_sample for mode train: 1
+11/14/2026 18:15:07:INFO:Creating/loading examples from dataset file at data/k-shot-1k-test/SST-2/16-42
+11/14/2026 18:15:07:INFO:Loading features from cached file data/k-shot-1k-test/SST-2/16-42/cached_train_RobertaTokenizerFast-roberta_128_sst-2 [took 0.000 s]
+11/14/2026 18:15:07:INFO:Label 0 to word Ġterrible (6587)
+11/14/2026 18:15:07:INFO:Label 1 to word Ġgreat (372)
+11/14/2026 18:15:07:INFO:Total num_sample for mode dev: 1
+11/14/2026 18:15:07:INFO:Creating/loading examples from dataset file at data/k-shot-1k-test/SST-2/16-42
+11/14/2026 18:15:07:INFO:Loading features from cached file data/k-shot-1k-test/SST-2/16-42/cached_dev_RobertaTokenizerFast-roberta_128_sst-2 [took 0.000 s]
+11/14/2026 18:15:07:INFO:*** Example ***
+11/14/2026 18:15:07:INFO:guid: dev-1
+11/14/2026 18:15:07:INFO:features: OurInputFeatures(input_ids=[0, 571, 4097, 82, 22107, 1437, 85, 21, 50264, 4, 2], attention_mask=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], token_type_ids=None, label=0, mask_pos=[8], label_word_list=None, sfc_input_ids=None, sfc_attention_mask=None, sfc_mask_pos=None)
+11/14/2026 18:15:07:INFO:text: <s>gave people seizures  It was<mask>.</s>
+11/14/2026 18:15:07:INFO:Label 0 to word Ġterrible (6587)
+11/14/2026 18:15:07:INFO:Label 1 to word Ġgreat (372)
+11/14/2026 18:15:07:INFO:Total num_sample for mode test: 1
+11/14/2026 18:15:07:INFO:Creating/loading examples from dataset file at data/k-shot-1k-test/SST-2/16-42
+11/14/2026 18:15:07:INFO:Loading features from cached file data/k-shot-1k-test/SST-2/16-42/cached_test_RobertaTokenizerFast-roberta_128_sst-2 [took 0.001 s]
+11/14/2026 18:15:07:INFO:*** Example ***
+11/14/2026 18:15:07:INFO:guid: test-1
+11/14/2026 18:15:07:INFO:features: OurInputFeatures(input_ids=[0, 405, 128, 29, 10, 18452, 8, 747, 7920, 3251, 479, 1437, 85, 21, 50264, 4, 2], attention_mask=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], token_type_ids=None, label=1, mask_pos=[14], label_word_list=None, sfc_input_ids=None, sfc_attention_mask=None, sfc_mask_pos=None)
+11/14/2026 18:15:07:INFO:text: <s>it's a charming and often affecting journey.  It was<mask>.</s>
+11/14/2026 18:15:08:INFO:***** Running training *****
+11/14/2026 18:15:08:INFO:  Num examples = 32
+11/14/2026 18:15:08:INFO:  Num Epochs = 13
+11/14/2026 18:15:08:INFO:  Instantaneous batch size per device = 8
+11/14/2026 18:15:08:INFO:  Total train batch size (w. parallel, distributed & accumulation) = 8
+11/14/2026 18:15:08:INFO:  Gradient Accumulation steps = 1
+11/14/2026 18:15:08:INFO:  Total optimization steps = 50
+11/14/2026 18:15:08:INFO:Parallel FZOO: N=4, 399 parameter tensors perturbed in the batched forward; not perturbed (must not affect the loss): []
+You're using a RobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+In file included from /home/maulik/miniconda3/envs/dpzero/include/python3.9/Python.h:8,
+                 from /tmp/tmpa1a_jeww/main.c:4:
+/home/maulik/miniconda3/envs/dpzero/include/python3.9/pyconfig.h:1619:9: warning: ‘_POSIX_C_SOURCE’ redefined
+ 1619 | #define _POSIX_C_SOURCE 200809L
+      |         ^~~~~~~~~~~~~~~
+In file included from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/stdlib.h:26,
+                 from /home/maulik/miniconda3/envs/dpzero/lib/python3.9/site-packages/triton/backends/nvidia/include/cuda.h:56,
+                 from /tmp/tmpa1a_jeww/main.c:2:
+/usr/include/features.h:319:10: note: this is the location of the previous definition
+  319 | # define _POSIX_C_SOURCE        202405L
+      |          ^~~~~~~~~~~~~~~
+11/14/2026 18:15:09:INFO:{'loss': 0.6447893977165222, 'learning_rate': 0.0001, 'N': 4, 'global_step': 0, 'zo_forward_step': 2, 'max_steps': 50, 'max_zo_forward_steps': 0, 'time': 1}
+11/14/2026 18:15:12:INFO:{'loss': 0.3294421136379242, 'learning_rate': 0.0001, 'N': 4, 'global_step': 10, 'zo_forward_step': 22, 'max_steps': 50, 'max_zo_forward_steps': 0, 'time': 4}
+11/14/2026 18:15:14:INFO:{'loss': 0.6506013870239258, 'learning_rate': 0.0001, 'N': 4, 'global_step': 20, 'zo_forward_step': 42, 'max_steps': 50, 'max_zo_forward_steps': 0, 'time': 6}
+11/14/2026 18:15:16:INFO:{'loss': 0.4412856101989746, 'learning_rate': 0.0001, 'N': 4, 'global_step': 30, 'zo_forward_step': 62, 'max_steps': 50, 'max_zo_forward_steps': 0, 'time': 8}
+11/14/2026 18:15:18:INFO:{'loss': 0.3959544599056244, 'learning_rate': 0.0001, 'N': 4, 'global_step': 40, 'zo_forward_step': 82, 'max_steps': 50, 'max_zo_forward_steps': 0, 'time': 10}
+11/14/2026 18:15:20:INFO:{'loss': 0.4909617304801941, 'learning_rate': 0.0001, 'N': 4, 'global_step': 50, 'zo_forward_step': 102, 'max_steps': 50, 'max_zo_forward_steps': 0, 'time': 12}
+11/14/2026 18:15:20:INFO:
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+11/14/2026 18:15:20:INFO:*** Validate ***
+/home/maulik/miniconda3/envs/dpzero/lib/python3.9/site-packages/transformers/trainer_pt_utils.py:411: FutureWarning: DistributedTensorGatherer is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+  0%|          | 0/8 [00:00<?, ?it/s] 75%|███████▌  | 6/8 [00:00<00:00, 55.73it/s]/home/maulik/miniconda3/envs/dpzero/lib/python3.9/site-packages/transformers/data/metrics/__init__.py:61: FutureWarning: This metric will be removed from the library soon, metrics should be handled with the 🤗 Evaluate library. You can have a look at this example script for pointers: https://github.com/huggingface/transformers/blob/main/examples/pytorch/text-classification/run_glue.py
+  warnings.warn(DEPRECATION_WARNING, FutureWarning)
+/home/maulik/miniconda3/envs/dpzero/lib/python3.9/site-packages/transformers/data/metrics/__init__.py:31: FutureWarning: This metric will be removed from the library soon, metrics should be handled with the 🤗 Evaluate library. You can have a look at this example script for pointers: https://github.com/huggingface/transformers/blob/main/examples/pytorch/text-classification/run_glue.py
+  warnings.warn(DEPRECATION_WARNING, FutureWarning)
+11/14/2026 18:15:20:INFO:{'eval_loss': 0.44173097610473633, 'eval_acc': 0.8125}
+11/14/2026 18:15:20:INFO:***** Eval results sst-2 *****
+11/14/2026 18:15:20:INFO:  eval_loss = 0.44173097610473633
+11/14/2026 18:15:20:INFO:  eval_acc = 0.8125
+13it [00:00, 59.92it/s]                      19it [00:00, 56.28it/s]25it [00:00, 54.18it/s]31it [00:00, 53.99it/s]37it [00:00, 52.87it/s]43it [00:00, 52.44it/s]49it [00:00, 52.24it/s]55it [00:01, 51.64it/s]61it [00:01, 52.46it/s]69it [00:01, 58.70it/s]77it [00:01, 62.84it/s]85it [00:01, 67.42it/s]93it [00:01, 69.85it/s]101it [00:01, 71.94it/s]109it [00:01, 73.70it/s]118it [00:01, 75.33it/s]126it [00:01, 74.75it/s]134it [00:02, 74.96it/s]142it [00:02, 74.59it/s]151it [00:02, 76.81it/s]159it [00:02, 76.78it/s]167it [00:02, 77.12it/s]175it [00:02, 77.39it/s]183it [00:02, 77.87it/s]191it [00:02, 78.27it/s]199it [00:02, 78.35it/s]208it [00:03, 79.49it/s]216it [00:03, 78.71it/s]224it [00:03, 73.05it/s]11/14/2026 18:15:23:INFO:{'eval_loss': 0.39422425627708435, 'eval_acc': 0.8314220183486238}
+11/14/2026 18:15:23:INFO:***** Test results sst-2 *****
+11/14/2026 18:15:23:INFO:  eval_loss = 0.39422425627708435
+11/14/2026 18:15:23:INFO:  eval_acc = 0.8314220183486238
+11/14/2026 18:15:23:INFO:****** Output Dir *******
+11/14/2026 18:15:23:INFO:result/SST-2-roberta-large-prompt-standard-k16-roberta-large-fzoo-dp-ft-seed42-bs8-lr1e-4-eps1e-4-wd0-step50-evalstep50-n4-par-fused1-rng1/16-42
+226it [00:03, 68.10it/s]

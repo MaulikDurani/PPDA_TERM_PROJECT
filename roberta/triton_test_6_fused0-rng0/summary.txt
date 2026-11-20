@@ -1,0 +1,2 @@
+task=MNLI seed=42 dev_acc=0.4791666666666667 test_acc=0.495 test_loss=2.0408780574798584
+task=MNLI  test_acc mean=0.4950  std=0.0000 (sample)  stderr=0.0000  over 1 seeds
