@@ -8,7 +8,7 @@ The `N` perturbed forward passes can be run as one batched pass, optionally with
 and the update can optionally use Nesterov momentum (post-processing, so it costs no extra privacy).
 The code is for fine-tuning RoBERTa-large on SST-2, SST-5, SNLI, MNLI, RTE and TREC.
 
-Code: https://github.com/MaulikDurani/PPDA_TERM_PROJECT
+
 
 ### Installation
 
@@ -44,7 +44,6 @@ src/fzoo_step.py         clipping / privatization / update helpers
 src/zo_parallel.py       batched forward over the N directions
 src/zo_kernels.py        fused Triton kernels (perturb, update, Nesterov update)
 examples/                run scripts (DP-FZOO, DPZero)
-tools/                   tests and result gathering
 ```
 
 ### Examples
@@ -84,13 +83,6 @@ check it to make sure they were applied.
 Compare against the DPZero baseline (two forward passes per step) with the same hyperparameters:
 ```bash
 bash run_models.sh examples/dpzero.sh
-```
-
-### Tests
-
-```bash
-bash tools/run_tests.sh          # CPU (Triton interpreter, slow)
-bash tools/run_tests.sh cuda     # GPU
 ```
 
 ### Acknowledgements
